@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,9 +59,21 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SD_CS_Pin GPIO_PIN_0
+#define SD_CS_GPIO_Port GPIOB
+#define Shouldtfucking_input_Pin GPIO_PIN_12
+#define Shouldtfucking_input_GPIO_Port GPIOB
+#define Dickly_eye_output_Pin GPIO_PIN_13
+#define Dickly_eye_output_GPIO_Port GPIOB
+#define TIM1_CH1_servo_Pin GPIO_PIN_8
+#define TIM1_CH1_servo_GPIO_Port GPIOA
+#define TIM1_CH2_vibration_Pin GPIO_PIN_9
+#define TIM1_CH2_vibration_GPIO_Port GPIOA
+#define Rage_input_Pin GPIO_PIN_9
+#define Rage_input_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+#define SD_SPI_HANDLE hspi1
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
